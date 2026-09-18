@@ -1,1 +1,79 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Alwin — Building responsive interfaces without a framework"><title>Building Responsive Interfaces — Alwin</title><link rel="stylesheet" href="style.css"></head><body><div class="progress"></div><header class="site-header"><div class="container nav"><a class="brand" href="index.html">Al<span>win</span></a><nav><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="index.html#about">About</a></li><li><a class="active" href="blog.html">Blog</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav><div class="nav-actions"><button class="icon-btn" data-theme-toggle>☾</button><a class="btn btn-primary" href="index.html#contact">Contact me</a><button class="menu-btn" data-menu-toggle aria-expanded="false">☰</button></div></div><div class="mobile-nav"><div class="container"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="index.html#about">About</a><a href="blog.html">Blog</a><a href="index.html#contact">Contact</a></div></div></header><main><section class="page-hero"><div class="container article"><p class="eyebrow">Web Development</p><h1>Building Responsive Interfaces Without a Framework</h1><p class="article-meta">By Alwin • Web development</p><div class="notice">The goal is not to support every possible screen individually. The goal is to build layouts that adapt naturally.</div><article class="article"><p>Responsive design starts with flexible structure rather than a long list of device-specific fixes. A good layout can shrink, grow and rearrange itself while keeping the content readable and the actions easy to use.</p><h2>1. Start with fluid layouts</h2><p>Use CSS Grid and Flexbox for the main structure. Let columns collapse at sensible breakpoints instead of forcing fixed widths. Containers should use a maximum width with flexible side padding.</p><div class="code"><code>.container { width: min(1120px, calc(100% - 32px)); margin: auto; }</code></div><h2>2. Use fluid typography</h2><p>Large headings can use <code>clamp()</code> so they scale between a minimum and maximum size. This reduces the need for many breakpoint-specific font sizes.</p><div class="code"><code>h1 { font-size: clamp(42px, 7vw, 76px); }</code></div><h2>3. Design for touch</h2><p>Buttons and navigation controls need enough space for comfortable tapping. Avoid tiny links and keep interactive elements visually distinct.</p><h2>4. Test the content, not only the device</h2><p>Resize the browser gradually. Look for long words, overflowing cards, awkward line lengths, and buttons that become too narrow. Fix the layout based on where the content needs help.</p><h2>Final thought</h2><p>A clean responsive site is usually the result of simple CSS rules applied consistently. Semantic HTML, flexible grids, fluid type and a small number of well-chosen breakpoints can go a long way.</p><p><a class="github" href="projects.html">See my projects →</a></p></article></div></section></main><footer class="footer"><div class="container footer-row"><span>© <span data-year></span> Alwin.</span><a class="github" href="https://github.com/alwin-codexstar" target="_blank" rel="noopener">GitHub</a></div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Alwin — Building responsive interfaces without a framework">
+    <title>Building Responsive Interfaces — Alwin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header class="site-header">
+        <div class="container nav"><a class="brand" href="index.html">Al<span>win</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a class="active" href="blog.html">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions"><button class="icon-btn" data-theme-toggle>☾</button><a class="btn btn-primary"
+                    href="index.html#contact">Contact me</a><button class="menu-btn" data-menu-toggle
+                    aria-expanded="false">☰</button></div>
+        </div>
+        <div class="mobile-nav">
+            <div class="container"><a href="index.html">Home</a><a href="projects.html">Projects</a><a
+                    href="index.html#about">About</a><a href="blog.html">Blog</a><a
+                    href="index.html#contact">Contact</a></div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container article">
+                <p class="eyebrow">Web Development</p>
+                <h1>Building Responsive Interfaces Without a Framework</h1>
+                <p class="article-meta">By Alwin • Web development</p>
+                <div class="notice">The goal is not to support every possible screen individually. The goal is to build
+                    layouts that adapt naturally.</div>
+                <article class="article">
+                    <p>Responsive design starts with flexible structure rather than a long list of device-specific
+                        fixes. A good layout can shrink, grow and rearrange itself while keeping the content readable
+                        and the actions easy to use.</p>
+                    <h2>1. Start with fluid layouts</h2>
+                    <p>Use CSS Grid and Flexbox for the main structure. Let columns collapse at sensible breakpoints
+                        instead of forcing fixed widths. Containers should use a maximum width with flexible side
+                        padding.</p>
+                    <div class="code"><code>.container { width: min(1120px, calc(100% - 32px)); margin: auto; }</code>
+                    </div>
+                    <h2>2. Use fluid typography</h2>
+                    <p>Large headings can use <code>clamp()</code> so they scale between a minimum and maximum size.
+                        This reduces the need for many breakpoint-specific font sizes.</p>
+                    <div class="code"><code>h1 { font-size: clamp(42px, 7vw, 76px); }</code></div>
+                    <h2>3. Design for touch</h2>
+                    <p>Buttons and navigation controls need enough space for comfortable tapping. Avoid tiny links and
+                        keep interactive elements visually distinct.</p>
+                    <h2>4. Test the content, not only the device</h2>
+                    <p>Resize the browser gradually. Look for long words, overflowing cards, awkward line lengths, and
+                        buttons that become too narrow. Fix the layout based on where the content needs help.</p>
+                    <h2>Final thought</h2>
+                    <p>A clean responsive site is usually the result of simple CSS rules applied consistently. Semantic
+                        HTML, flexible grids, fluid type and a small number of well-chosen breakpoints can go a long
+                        way.</p>
+                    <p><a class="github" href="projects.html">See my projects →</a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-row"><span>© <span data-year></span> Alwin.</span><a class="github"
+                href="https://github.com/alwin-codexstar" target="_blank" rel="noopener">GitHub</a></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
