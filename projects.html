@@ -1,1 +1,136 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Alwin's web development and data analytics projects"><title>Projects — Alwin</title><link rel="stylesheet" href="style.css"></head><body><div class="progress"></div><header class="site-header"><div class="container nav"><a class="brand" href="index.html">Al<span>win</span></a><nav><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a class="active" href="projects.html">Projects</a></li><li><a href="index.html#about">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav><div class="nav-actions"><button class="icon-btn" data-theme-toggle aria-label="Switch theme">☾</button><a class="btn btn-primary" href="index.html#contact">Contact me</a><button class="menu-btn" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button></div></div><div class="mobile-nav"><div class="container"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="index.html#about">About</a><a href="blog.html">Blog</a><a href="index.html#contact">Contact</a></div></div></header><main><section class="page-hero"><div class="container"><p class="eyebrow">Portfolio</p><h1>My Projects</h1><p>Web development and data analytics projects focused on responsive interfaces, useful insights and practical problem solving.</p><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="web">Web Development</button><button class="filter" data-filter="data">Data Analytics</button></div></div></section><section><div class="container"><div class="grid-3" id="projectGrid"><article class="card project reveal" data-category="web"><img src="https://placehold.co/900x560/151518/ffffff?text=Web+Development" alt="Web development project"><div class="project-body"><div class="tags"><span class="tag accent-tag">Web Development</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span></div><h3>Responsive Portfolio Website</h3><p>A clean portfolio experience built with semantic HTML, modern CSS and JavaScript, designed for phones, tablets and desktops.</p></div></article><article class="card project reveal" data-category="web"><img src="https://placehold.co/900x560/eeeeee/222222?text=JavaScript+App" alt="JavaScript web app"><div class="project-body"><div class="tags"><span class="tag accent-tag">Web Development</span><span class="tag">JavaScript</span></div><h3>Interactive Web App</h3><p>A responsive application concept with reusable UI patterns, client-side interactions and accessible controls.</p></div></article><article class="card project reveal" data-category="data"><img src="https://placehold.co/900x560/151518/ffffff?text=Sales+Analytics" alt="Sales analytics"><div class="project-body"><div class="tags"><span class="tag accent-tag">Data Analytics</span><span class="tag">Python</span><span class="tag">SQL</span></div><h3>Sales Analytics</h3><p>Analysed sales data to identify trends, compare categories and summarise important business metrics.</p></div></article><article class="card project reveal" data-category="data"><img src="https://placehold.co/900x560/eeeeee/222222?text=Dashboard" alt="Analytics dashboard"><div class="project-body"><div class="tags"><span class="tag accent-tag">Data Analytics</span><span class="tag">Power BI</span><span class="tag">Excel</span></div><h3>Analytics Dashboard</h3><p>A dashboard concept that presents KPIs, trends and comparisons through simple interactive visuals.</p></div></article><article class="card project reveal" data-category="data"><img src="https://placehold.co/900x560/151518/ffffff?text=Data+Visualization" alt="Data visualization"><div class="project-body"><div class="tags"><span class="tag accent-tag">Data Analytics</span><span class="tag">Visualization</span></div><h3>Data Visualization Report</h3><p>A reporting project focused on turning raw information into clear charts and actionable observations.</p></div></article><article class="card project reveal" data-category="web"><img src="https://placehold.co/900x560/eeeeee/222222?text=Responsive+UI" alt="Responsive user interface"><div class="project-body"><div class="tags"><span class="tag accent-tag">Web Development</span><span class="tag">Responsive UI</span></div><h3>Responsive UI Components</h3><p>A collection of reusable layouts, cards, navigation and forms designed for consistent responsive behaviour.</p></div></article></div></div></section><section><div class="container"><div class="cta"><p class="eyebrow">Source code</p><h2>See more on GitHub</h2><p>Explore my repositories, experiments and project source code.</p><a class="btn btn-primary" href="https://github.com/alwin-codexstar" target="_blank" rel="noopener">Open GitHub →</a></div></div></section></main><footer class="footer"><div class="container footer-row"><span>© <span data-year></span> Alwin.</span><a class="github" href="https://github.com/alwin-codexstar" target="_blank" rel="noopener">GitHub</a></div></footer><script src="script.js"></script><script>document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;document.querySelectorAll('#projectGrid .project').forEach(c=>c.style.display=f==='all'||c.dataset.category===f?'':'none')}));</script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Alwin's web development and data analytics projects">
+    <title>Projects — Alwin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header class="site-header">
+        <div class="container nav"><a class="brand" href="index.html">Al<span>win</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="projects.html">Projects</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions"><button class="icon-btn" data-theme-toggle aria-label="Switch theme">☾</button><a
+                    class="btn btn-primary" href="index.html#contact">Contact me</a><button class="menu-btn"
+                    data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button></div>
+        </div>
+        <div class="mobile-nav">
+            <div class="container"><a href="index.html">Home</a><a href="projects.html">Projects</a><a
+                    href="index.html#about">About</a><a href="blog.html">Blog</a><a
+                    href="index.html#contact">Contact</a></div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Portfolio</p>
+                <h1>My Projects</h1>
+                <p>Web development and data analytics projects focused on responsive interfaces, useful insights and
+                    practical problem solving.</p>
+                <div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter"
+                        data-filter="web">Web Development</button><button class="filter" data-filter="data">Data
+                        Analytics</button></div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="grid-3" id="projectGrid">
+                    <article class="card project reveal" data-category="web"><img
+                            src="https://placehold.co/900x560/151518/ffffff?text=Web+Development"
+                            alt="Web development project">
+                        <div class="project-body">
+                            <div class="tags"><span class="tag accent-tag">Web Development</span><span
+                                    class="tag">HTML/CSS</span><span class="tag">JavaScript</span></div>
+                            <h3>Responsive Portfolio Website</h3>
+                            <p>A clean portfolio experience built with semantic HTML, modern CSS and JavaScript,
+                                designed for phones, tablets and desktops.</p>
+                        </div>
+                    </article>
+                    <article class="card project reveal" data-category="web"><img
+                            src="https://placehold.co/900x560/eeeeee/222222?text=JavaScript+App"
+                            alt="JavaScript web app">
+                        <div class="project-body">
+                            <div class="tags"><span class="tag accent-tag">Web Development</span><span
+                                    class="tag">JavaScript</span></div>
+                            <h3>Interactive Web App</h3>
+                            <p>A responsive application concept with reusable UI patterns, client-side interactions and
+                                accessible controls.</p>
+                        </div>
+                    </article>
+                    <article class="card project reveal" data-category="data"><img
+                            src="https://placehold.co/900x560/151518/ffffff?text=Sales+Analytics" alt="Sales analytics">
+                        <div class="project-body">
+                            <div class="tags"><span class="tag accent-tag">Data Analytics</span><span
+                                    class="tag">Python</span><span class="tag">SQL</span></div>
+                            <h3>Sales Analytics</h3>
+                            <p>Analysed sales data to identify trends, compare categories and summarise important
+                                business metrics.</p>
+                        </div>
+                    </article>
+                    <article class="card project reveal" data-category="data"><img
+                            src="https://placehold.co/900x560/eeeeee/222222?text=Dashboard" alt="Analytics dashboard">
+                        <div class="project-body">
+                            <div class="tags"><span class="tag accent-tag">Data Analytics</span><span class="tag">Power
+                                    BI</span><span class="tag">Excel</span></div>
+                            <h3>Analytics Dashboard</h3>
+                            <p>A dashboard concept that presents KPIs, trends and comparisons through simple interactive
+                                visuals.</p>
+                        </div>
+                    </article>
+                    <article class="card project reveal" data-category="data"><img
+                            src="https://placehold.co/900x560/151518/ffffff?text=Data+Visualization"
+                            alt="Data visualization">
+                        <div class="project-body">
+                            <div class="tags"><span class="tag accent-tag">Data Analytics</span><span
+                                    class="tag">Visualization</span></div>
+                            <h3>Data Visualization Report</h3>
+                            <p>A reporting project focused on turning raw information into clear charts and actionable
+                                observations.</p>
+                        </div>
+                    </article>
+                    <article class="card project reveal" data-category="web"><img
+                            src="https://placehold.co/900x560/eeeeee/222222?text=Responsive+UI"
+                            alt="Responsive user interface">
+                        <div class="project-body">
+                            <div class="tags"><span class="tag accent-tag">Web Development</span><span
+                                    class="tag">Responsive UI</span></div>
+                            <h3>Responsive UI Components</h3>
+                            <p>A collection of reusable layouts, cards, navigation and forms designed for consistent
+                                responsive behaviour.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="cta">
+                    <p class="eyebrow">Source code</p>
+                    <h2>See more on GitHub</h2>
+                    <p>Explore my repositories, experiments and project source code.</p><a class="btn btn-primary"
+                        href="https://github.com/alwin-codexstar" target="_blank" rel="noopener">Open GitHub →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-row"><span>© <span data-year></span> Alwin.</span><a class="github"
+                href="https://github.com/alwin-codexstar" target="_blank" rel="noopener">GitHub</a></div>
+    </footer>
+    <script src="script.js"></script>
+    <script>document.querySelectorAll('.filter').forEach(b => b.addEventListener('click', () => {document.querySelectorAll('.filter').forEach(x => x.classList.remove('active')); b.classList.add('active'); const f = b.dataset.filter; document.querySelectorAll('#projectGrid .project').forEach(c => c.style.display = f === 'all' || c.dataset.category === f ? '' : 'none')}));</script>
+</body>
+
+</html>
